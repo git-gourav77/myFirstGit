@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto sans", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.items {
+  cursor: pointer;
+  transition: 0.3s ease;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */ /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, supported by most modern browsers */
+}
+
+.items:hover {
+  scale: 0.9;
+}
+
+.items:active {
+  scale: 0.7;
+}
+
+.top {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  height: 9vh;
+}
+
+.navBar {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding: 0 13px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navBar .logo i {
+  color: #da4556;
+  font-size: 33px;
+}
+
+.navLinks .links {
+  display: flex;
+  font-weight: 700;
+}
+
+.navLinks .links li {
+  list-style: none;
+  margin: 0 19px;
+}
+
+.searchArea {
+  width: 65%;
+  font-weight: 500;
+  position: relative;
+}
+
+.SuggestionsBox {
+  width: 55%;
+  background-color: #ffffff;
+  top: 106%;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 30;
+  position: fixed;
+  top: 50px;
+  left: 25%;
+  visibility: hidden;
+}
+
+.SuggestionsBox .suggestions {
+  padding: 8px 5px;
+  display: flex;
+  gap: 7px;
+}
+
+.SuggestionsBox .suggestions:active {
+  scale: 0.9;
+}
+
+.SuggestionsBox .suggestions i {
+  margin-right: 4px;
+}
+
+.searchArea .searchBox {
+  width: 100%;
+  /* background-color: brown; */
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  background-color: #e4e4e6;
+}
+
+.searchArea .searchBox input {
+  background: transparent;
+  border: none;
+  width: 90%;
+  color: #aaaaae;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+input::-moz-placeholder {
+  color: #aaaaae;
+  font-weight: 500;
+}
+
+input::placeholder {
+  color: #aaaaae;
+  font-weight: 500;
+}
+
+.AllPinsBtn {
+  height: 100%;
+  padding: 9px 0px;
+  border-radius: 40px;
+  padding-left: 16px;
+  font-weight: bold;
+  border-left: 0.8px solid #b5b7bd;
+  font-size: 13px;
+}
+
+.leftIconsArea {
+  display: flex;
+  width: 9%;
+  color: #737377;
+  padding: 7px 5px;
+  justify-content: space-evenly;
+  font-size: 19px;
+  gap: 12px;
+}
+
+.profilePic {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.smallImgIco {
+  width: 24px;
+  height: 24px;
+  background-color: grey;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.smallImgIco img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.SearchBlur {
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgba(53, 53, 53, 0.65);
+  transition: all 0.3s;
+  position: fixed;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  margin-top: 65px;
+  display: none;
+}
+
+.pin_container {
+  width: 100%;
+  margin-top: 25px;
+  padding: 5px 31px;
+  margin-bottom: 58px;
+  -moz-column-count: 4;
+       column-count: 4;
+}
+
+.pin_container .imgBox {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 3px;
+}
+
+.pin_container .imgBox img {
+  border-radius: 19px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=Pinterest.css.map */

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Clone, Just a little bit</title>
+    <link rel="stylesheet" href="Pinterest.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+   
+    <div class="SearchBlur"></div>
+    <!-- Nav Bar area --> <!-- Aka the top area-->
+    <div class="top">
+        <nav class="navBar">
+            <div class="logo">
+                <div class="logoImgBox items">
+                    <i class="ri-pinterest-fill"></i>
+                </div>
+            </div>
+
+            <div class="navLinks">
+                <div class="links">
+                    <li class="items">Home</li>
+                    <li class="items">Explore</li>
+                    <li class="items">Create <i class="ri-arrow-down-s-line"></i></li>
+                </div>
+            </div>
+
+            <div class="searchArea">
+                
+
+                <!-- The rest search Box -->
+                <div class="searchBox">
+                    <input type="text" placeholder="Search Pizza, 3d Design or what not...">
+                    <div class="AllPinsBtn items">
+                        <div class="AllPinsButton">All Pins <i class="ri-arrow-down-s-line"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leftIconsArea">
+                <div class="bell items">
+                    <i class="ri-notification-3-fill"></i>
+                </div>
+                <div class="msg items">
+                    <i class="ri-message-3-fill"></i>
+                </div>
+                <div class="profilePic items">
+                    <div class="smallImgIco">
+                        <img src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Now the searchNone area... -->
+
+
+    <!-- the pin images section -->
+    <div class="pin_container" id="pin_container">
+    
+    </div>
+
+    <!-- Suggestion box -->
+                <div class="SuggestionsBox">
+                </div>
+    <!-- The main pin container div ends here... -->
+
+    <script src="Pinterest.js"></script>
+</body>
+
+</html>
